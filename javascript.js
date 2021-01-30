@@ -1,17 +1,17 @@
-document.getElementById('add-firstClass-ticket').addEventListener('click', function () {
-    handleTicketCountChange('firstClass', true);
-})
-document.getElementById('minus-firstClass-ticket').addEventListener('click', function () {
-    handleTicketCountChange('firstClass', false);
-})
+// document.getElementById('add-firstClass-ticket').addEventListener('click', function () {
+//     handleTicketCountChange('firstClass', true);
+// })
+// document.getElementById('minus-firstClass-ticket').addEventListener('click', function () {
+//     handleTicketCountChange('firstClass', false);
+// })
 
-document.getElementById('add-economyClass-ticket').addEventListener('click', function () {
-    handleTicketCountChange('economyClass', true);
-})
+// document.getElementById('add-economyClass-ticket').addEventListener('click', function () {
+//     handleTicketCountChange('economyClass', true);
+// })
 
-document.getElementById('minus-economyClass-ticket').addEventListener('click', function () {
-    handleTicketCountChange('economyClass', false);
-})
+// document.getElementById('minus-economyClass-ticket').addEventListener('click', function () {
+//     handleTicketCountChange('economyClass', false);
+// })
 
 //function use for  increase count,decrease count and calculate ticket price..
 function handleTicketCountChange(product, isIncrease) {
@@ -32,9 +32,9 @@ function handleTicketCountChange(product, isIncrease) {
     if (product == 'economyClass') {
         ticketClassTotal = ticketClassNewCount * 100;
     }
-    calculateTotal();  //subtotal,vat grand total calculate calling function
+    calculateTotal();
 }
-
+//subtotal,vat grand total calculate  function
 function calculateTotal() {
     const firstClassPrice = getInputValue('firstClass');
     const economyClassPrice = getInputValue('economyClass');
@@ -55,5 +55,5 @@ function getInputValue(ticket) {
 }
 //after booking show confirmation message..
 function confirmationMessage() {
-    alert("Thank you,Your booking complete!");
+    alert("Congratulation! Your flight booking is confirmed");
 }
