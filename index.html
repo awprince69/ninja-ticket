@@ -28,7 +28,7 @@
 
     <!--Booking Section-->
     <main class="main-content container">
-        <div class="booking-form">
+        <div id="booking" class="booking-form">
             <h3>Booking Flights</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
@@ -83,7 +83,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$ <span id="subtotal-price">0</span></p>
+                        <p>$ <span id="subtotal-amount">0</span></p>
                     </div>
                 </div>
 
@@ -111,9 +111,59 @@
         <div class="booking-content">
             <h1>discover <br> around the world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
-                veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
+                veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt
+                nobise
                 voluptatibus quam</p>
         </div>
+        </section>
+
+        <!-- confirmation Area-->
+        <section>
+            <div id="confirmation-area" class="calculations status">
+                <h3><span id="textColor">Congratulation! Your flight booking is confirmed</span></h3>
+                <div class="amount">
+                    <div class="left">
+                        <p>First Class</p>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="firstClass-price">0</span></p>
+                    </div>
+                </div>
+                <div class="amount">
+                    <div class="left">
+                        <p>Economy</p>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="economyClass-price">0</span></p>
+                    </div>
+                </div>
+                <div class="amount">
+                    <div class="left">
+                        <p>Ticket Fare</p>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="ticket-price">0</span></p>
+                    </div>
+                </div>
+
+                <div class="amount">
+                    <div class="left">
+                        <p>VAT</p>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="vat-price">0</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total Amount</h4>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="grandTotal-price">0</span></p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <script src="javascript.js"></script>

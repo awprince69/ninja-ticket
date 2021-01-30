@@ -120,6 +120,23 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+
+#confirmation-area{
+    display: none;
+}
+
+.status{
+    text-align: center;
+    color: white;
+    display: inline-block;
+    background-color: teal;
+    padding: 10px;
+}
+
+#textColor{
+    color: #cdcd32;
+}
+
 /* this css use for remove input type number arrow */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

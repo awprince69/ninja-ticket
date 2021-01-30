@@ -29,7 +29,7 @@ function calculateTotal() {
 
     const vat = Math.round(totalPrice * 0.10);
     document.getElementById('vat-amount').innerText = vat;
-    document.getElementById('subtotal-price').innerText = totalPrice;
+    document.getElementById('subtotal-amount').innerText = totalPrice;
 
     const grandTotal = totalPrice + vat;
     document.getElementById('grandTotal-amount').innerText = grandTotal;
@@ -45,5 +45,27 @@ function getInputValue(ticket) {
 
 //after booking show confirmation message..
 function confirmationMessage() {
-    alert("Congratulation! Your flight booking is confirmed");
+    //use getInputValue function to get quantity of tickets
+    const firstClassPrice = getInputValue('firstClass');
+    document.getElementById('firstClass-price').innerText = firstClassPrice;
+    const economyClassPrice = getInputValue('economyClass');
+    document.getElementById('economyClass-price').innerText = economyClassPrice;
+
+    const ticketFare = getPriceValue('subtotal');
+    document.getElementById('ticket-price').innerText = ticketFare;
+    const vatPrice = getPriceValue('vat');
+    document.getElementById('vat-price').innerText = vatPrice;
+    const grandPrice = getPriceValue('grandTotal')
+    document.getElementById('grandTotal-price').innerText = grandPrice;
+
+    document.getElementById('booking').style.display = 'none';
+    document.getElementById('confirmation-area').style.display = 'block';
+}
+
+
+//get the price from subtotal,vat,grandTotal
+function getPriceValue(price) {
+    const ticketPriceInput = document.getElementById(price + '-amount');
+    const ticketPriceCount = parseInt(ticketPriceInput.innerText);
+    return ticketPriceCount;
 }
