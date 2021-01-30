@@ -1,18 +1,3 @@
-// document.getElementById('add-firstClass-ticket').addEventListener('click', function () {
-//     handleTicketCountChange('firstClass', true);
-// })
-// document.getElementById('minus-firstClass-ticket').addEventListener('click', function () {
-//     handleTicketCountChange('firstClass', false);
-// })
-
-// document.getElementById('add-economyClass-ticket').addEventListener('click', function () {
-//     handleTicketCountChange('economyClass', true);
-// })
-
-// document.getElementById('minus-economyClass-ticket').addEventListener('click', function () {
-//     handleTicketCountChange('economyClass', false);
-// })
-
 //function use for  increase count,decrease count and calculate ticket price..
 function handleTicketCountChange(product, isIncrease) {
     const ticketClassInput = document.getElementById(product + '-count');
