@@ -128,9 +128,10 @@ nav ul li a:hover, a.active{
 .status{
     text-align: center;
     color: white;
-    display: inline-block;
     background-color: teal;
     padding: 10px;
+    box-shadow: 20px 10px 50px darkslateblue;
+    border-radius: 16px;
 }
 
 #textColor{
