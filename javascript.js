@@ -17,7 +17,6 @@ document.getElementById('minus-economyClass-ticket').addEventListener('click', f
 function handleTicketCountChange(product, isIncrease) {
     const ticketClassInput = document.getElementById(product + '-count');
     const ticketClassCount = parseInt(ticketClassInput.value);
-
     let ticketClassNewCount = 0;
     if (isIncrease == true) {
         ticketClassNewCount = ticketClassCount + 1;
@@ -33,11 +32,10 @@ function handleTicketCountChange(product, isIncrease) {
     if (product == 'economyClass') {
         ticketClassTotal = ticketClassNewCount * 100;
     }
-    calculateTotal(); //subtotal,vat grand total calculate calling function
+    calculateTotal();  //subtotal,vat grand total calculate calling function
 }
 
 function calculateTotal() {
-
     const firstClassPrice = getInputValue('firstClass');
     const economyClassPrice = getInputValue('economyClass');
     const totalPrice = firstClassPrice * 150 + economyClassPrice * 100;
@@ -54,4 +52,8 @@ function getInputValue(ticket) {
     const ticketClassInput = document.getElementById(ticket + '-count');
     const ticketClassCount = parseInt(ticketClassInput.value);
     return ticketClassCount;
+}
+//after booking show confirmation message..
+function confirmationMessage() {
+    alert("Thank you,Your booking complete!");
 }
