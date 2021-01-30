@@ -19,6 +19,8 @@ function handleTicketCountChange(product, isIncrease) {
     }
     calculateTotal();
 }
+
+
 //subtotal,vat grand total calculate  function
 function calculateTotal() {
     const firstClassPrice = getInputValue('firstClass');
@@ -33,11 +35,14 @@ function calculateTotal() {
     document.getElementById('grandTotal-amount').innerText = grandTotal;
 }
 
+
 function getInputValue(ticket) {
     const ticketClassInput = document.getElementById(ticket + '-count');
     const ticketClassCount = parseInt(ticketClassInput.value);
     return ticketClassCount;
 }
+
+
 //after booking show confirmation message..
 function confirmationMessage() {
     alert("Congratulation! Your flight booking is confirmed");
