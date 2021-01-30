@@ -37,11 +37,11 @@ function handleTicketCountChange(product, isIncrease) {
 }
 
 function calculateTotal() {
-    
+
     const firstClassPrice = getInputValue('firstClass');
     const economyClassPrice = getInputValue('economyClass');
     const totalPrice = firstClassPrice * 150 + economyClassPrice * 100;
-    
+
     const vat = Math.round(totalPrice * 0.10);
     document.getElementById('vat-amount').innerText = vat;
     document.getElementById('subtotal-price').innerText = totalPrice;

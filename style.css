@@ -67,9 +67,9 @@ nav ul li a:hover, a.active{
 }
 .plus-minus-btn{
     color: #3352F2;
-    font-size: 30px;
+    font-size: 15px;
     padding: 2px;
-    margin-top: 10px;
+    margin-top: 20px;
     word-spacing: 20px;
 }
 .booking-form  .calculations{
@@ -120,3 +120,9 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+/* this css use for remove input type number arrow */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} 
